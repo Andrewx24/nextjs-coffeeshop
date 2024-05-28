@@ -1,10 +1,10 @@
-import React from 'react'
-import Link from 'next/link'
+import React from 'react';
+import Link from 'next/link';
 
 const Navbar = () => {
   return (
     <div>
-      <nav className='flex items-center justify-between flex-wrap bg-teal-500 p-6'> 
+      <nav className='flex items-center justify-between flex-wrap bg-teal-500 p-6'>
         <ul className='flex items-center text-white'>
           <li className='mr-6'>
             <Link href="/">
@@ -22,9 +22,21 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
+        <ul className='flex items-center text-white'>
+          <li>
+            <Link href="/sign-in">
+              Sign in
+            </Link>
+          </li>
+          <li>
+            <Link href="/sign-up">
+             Sign Up
+            </Link>
+          </li>
+        </ul>
       </nav>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
