@@ -2,7 +2,7 @@ export default function Contact() {
     
     return (
       <main>
-        <h1>Contact</h1>
+        <h1 className=" text-5xl">Contact</h1>
       </main>
     )
 }

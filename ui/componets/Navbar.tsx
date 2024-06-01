@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Navbar = () => {
   return (
     <div>
-      <nav className='flex items-center justify-between flex-wrap bg-teal-500 p-6'>
+      <nav className='flex-between '>
         <ul className='flex items-center text-white'>
           <li className='mr-6'>
             <Link href="/">
@@ -12,13 +12,13 @@ const Navbar = () => {
             </Link>
           </li>
           <li className='mr-6'>
-            <Link href="/contact">
-              Contact
+            <Link href="/store">
+              Store
             </Link>
           </li>
           <li>
-            <Link href="/store">
-              Store
+            <Link href="/contact">
+              Contact
             </Link>
           </li>
         </ul>
