@@ -21,10 +21,6 @@ const config: Config = {
           800: "#0369a1",
           900: "#075985",
         },
-        }
-
-       
-
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
