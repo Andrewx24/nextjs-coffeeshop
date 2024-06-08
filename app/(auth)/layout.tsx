@@ -11,9 +11,11 @@ export default function RootLayout({
     return (
       <html lang="en">
         <body >
-          <Navbar/>
+         
+        <main className="flex min-h-screen w-full items-center justify-center">
+      {children}
+    </main>
           
-          {children} 
           
           </body>
       </html>
