@@ -12,7 +12,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // You can add custom colors here
+        
+        'primary': '#FF6363',
+        'secondary': {
+          100: '#E2E2D5',
+          200: '#888883',
+        },
       },
     },
   },
