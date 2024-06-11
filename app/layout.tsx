@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-
-
-const inter = Inter({ subsets: ["latin"] });
+import Navbar from "@/ui/componets/Navbar";
 import {
   ClerkProvider,
   SignInButton,
@@ -11,6 +9,10 @@ import {
   SignedOut,
   UserButton
 } from '@clerk/nextjs'
+
+
+const inter = Inter({ subsets: ["latin"] });
+
 
 export const metadata: Metadata = {
   title: "Not your normal coffee shop",
@@ -26,8 +28,8 @@ export default function RootLayout({
     <ClerkProvider>
     <html lang="en">
       <body className={inter.className}>
-     
-        {children}
+      <Navbar/>
+       {children}
         
         </body>
     </html>
