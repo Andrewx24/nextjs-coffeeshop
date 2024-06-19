@@ -11,6 +11,8 @@ import {
 } from '@clerk/nextjs'
 
 
+
+
 const inter = Inter({ subsets: ["latin"] });
 
 
@@ -30,9 +32,11 @@ export default function RootLayout({
       <body className={inter.className}>
       <Navbar/>
        {children}
-        
+       
         </body>
+        
     </html>
+    
     </ClerkProvider>
   );
 }
